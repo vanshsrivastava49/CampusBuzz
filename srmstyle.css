@@ -1,0 +1,477 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh;
+    max-width: 100%;
+  }
+  #home {
+    background-image: url('./photos/clubback.avif');
+    background-color:  #ffd000;
+    padding-bottom: 1cm;
+    margin-left:-2mm;
+    margin-top: -2mm;
+    margin-right:-2mm;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+    height: 10mm;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+   }
+   .srm a{
+    font-family:sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.6mm;
+    color:#000000;
+   }
+   .srm img{
+    position: absolute;
+    left:-50px;
+    top:5px;
+    height:180px;
+    overflow: hidden;
+   }
+   body{
+    background-image: url('./photos/background.avif');
+   }
+   .search
+   {
+    align-items: center;
+    text-align: center;
+   }
+  #searchclub{
+    width:400px;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-top:30px;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0,0.3);
+    margin-bottom:-50px;
+    text-align:center;
+    border-radius: 10px;
+    font-weight:600;
+    background-color: 2px solid #000000;
+    background: none;
+  }
+  #sclubname{
+    text-align: center;
+    margin-left: 1px;
+    width:90px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0,0.3);
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    background: none;
+    background-color: 2px solid #000000;
+    transition:0.4s;
+  }
+  #sclubname:active{
+    transform: scale(0.95); 
+    color:#ffd000;
+  }
+  #sclubname:hover{
+    background-color: #000000;
+    color: rgb(240, 231, 231);
+  }
+  input{
+    flex:1;
+    height:30px;
+  }
+  .search-result{
+    max-height: 200px;
+    margin-top: 2px;
+    
+    overflow-y: scroll;
+    align-items: center;
+    font-family: 'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    padding-left: 131mm;
+    margin-right: 152mm;
+    overflow-x: hidden;
+  }
+  .search-result ul{
+    margin-left: 0px;
+    background-color: rgb(245, 243, 243);
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0,0.3);
+    margin-top:3px;
+    align-items: left;
+    
+    text-align: left;
+    width:364px;
+    justify-content: flex-end;
+    padding-right: 15px 10px;
+    text-align: left;
+    border-radius: 10px;
+  }
+  .search-result ul li{
+    list-style:none;
+    padding:10px;
+    margin:0;
+    align-items: left;
+    text-align: left;
+    cursor:pointer;
+    border-radius: 10px;
+  }
+  .search-result ul li:hover{
+    color: #ff9d00;
+  }
+  @media (max-width:900px){
+    .search-result{
+      padding-left:100mm;
+      margin-right:0mm ;
+      margin-left: -18mm;
+    }
+  }
+  @media (orientation:portrait)
+  {
+    .search-result{
+      padding-left: 60mm;
+      margin-right: 80mm;
+    }
+  }
+  .crec{
+    border: none;
+    background-image: #ffd000;
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 10px;
+    cursor:pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #434b54;
+    animation: blinker 1.0s linear infinite;
+  }
+  @keyframes blinker {
+    0%   {background-color: rgba(255, 0, 0, 0.648);}
+    25%  {background-color: rgba(255, 255, 0, 0.642);}
+    50%  {background-color: rgba(0, 0, 255, 0.585);}
+    100% {background-color: rgba(6, 221, 6, 0.64);}
+  }
+  .dropdown.active > .crec,
+  .crec:hover{
+    color:#000000;
+  }
+  .dropdown{
+    position: relative;
+    z-index: 2;
+    font-family: cursive;
+    margin-left: 10px;
+  }
+  
+  .dropdown-menu{
+    position: absolute;
+    font-size: 20px;
+    left:0px;
+    background-color: white;
+    padding-top: 0.5rem;
+    padding:0.75rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0,0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out,transform 0.2s ease-in-out;
+    transform: translateY(-10px);
+  }
+  .dropdown.active > .crec + .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  .dropdown-menu a{
+    color:blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.2s ease-in-out;
+  }
+  .dropdown-menu a:hover{
+    color:black;
+  }
+  .topmenu {
+    color: #434b54;
+    position: relative;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration:none;
+    margin:5px;
+    right:-50px;
+  }
+  .topmenu:after{
+    content:"";
+    position:absolute;
+    background-color: rgb(255, 68, 0);
+    height:3px;
+    width:0;
+    left:0;
+    bottom:-2px;
+    transform: left;
+    transition:0.5s;
+  }
+  .topmenu:hover:after{
+    width:100%;
+  }
+  .topmenu:hover{
+    color:#000000;
+  }
+  .topdiv {
+    text-align: right;
+    padding-right: 2cm;
+    }
+  .container {
+    display: flex;
+  }
+  hr{
+    border-radius: 5px;
+    border:5px solid #000000;
+    margin-left:-2mm;
+    margin-right: -2mm;
+  }
+  .about-me {
+    display: flex;
+    align-items: center;
+  }
+  #about-me{
+    background-image: url('./photos/background.avif');
+    border: 1px solid gray;
+    display: block;
+    border-radius: 10px;
+    padding-top: -10px;
+    padding-left:20px;
+    padding-bottom:10px;
+    margin-top: 5px;
+    width:92%;
+    font-size: 25px;
+    box-shadow: 0 3px 10px rgb(0, 0, 0);
+    background-color: #ff8400;
+  }
+  #about-me h1 {
+    font-size: 25px;
+    margin-top: 30px;
+    color: #ff4800;
+    text-align: left;
+  }
+  #about-me h2{
+    font-size: 25px;
+    margin-top: 30px;
+    color: #000000;
+    text-align: left;
+  }
+  #about-me h6{
+    font-size:20px;
+    padding-top: 5px;
+    margin-top: -15px;
+    margin-bottom: 5px;
+  }
+  #about-me img{
+  height: 35px;
+    align-items:center;
+    margin-right: 10px;
+    margin-top: -20px;
+  }
+  #about-me p {
+    font-size: 15px;
+    text-align: left;
+    color: rgb(76, 75, 75);
+    margin-top: 7px;
+  }
+  
+  .all_clubs {
+    display: flex;
+    flex-direction: column;
+    flex-flow:wrap;
+  }
+  .seperate{
+    text-decoration: none;
+    color:#000000;
+  }
+  .spacing{
+    margin-top: 40px;
+  }
+  .club {
+    background-image: url('./photos/clubback.avif');
+    border: 1px solid gray;
+    background-position: center;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 40px;
+    width: 3in;
+    font-size: 25px;
+    box-shadow: 0 3px 10px gray;
+    background-color: #ffd000;
+    animation: fade-out linear;
+    animation-timeline: view(); 
+    animation-range:exit 200px;
+  }
+  @keyframes fade-out {
+to{opacity:0;}    
+  }
+  @media (max-width:900px){
+    .club{
+      width:2.3in;
+    }
+  }
+  
+  .club img {
+    height: 35px;
+    align-items:center;
+    margin-bottom:-5px;
+  }
+  
+  .club h6 {
+    align-items: center;
+    font-size: 25px;
+    letter-spacing:0.3mm;
+    margin-block-start: 8px;
+    font-weight: lighter;
+    margin-block-end: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom:20px;
+  } 
+  .club p {
+    align-items: center;
+    font-size: 15px;
+    color: rgb(107, 103, 103);
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+  } 
+  .club ul li{
+    font-size: 15px;
+    margin-top: -5px;
+    padding: 5px;
+    text-align: left;
+    color: rgb(107, 103, 103);
+  }
+  .club a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  .flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pagination{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .pagination a{
+    color: #ffcc00;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ffcc00;
+    margin: 0 5px;
+    border-width: 3px;
+    font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    border-radius: 14px;
+    background-position: 0 -40px;
+    transition:all 0.3s ease-in-out;
+  }
+  .pagination a:hover {
+    background-color: #ffcc00;
+    color: white;
+}
+.pagination .active {
+  background-color: #ffcc00;
+  color: white;
+}
+  .pagination a.active{
+    color:#fff;
+  }
+  .pagination a{
+    text-decoration: none;
+    color:black;
+  }
+  .page-link .active{
+    background-color: #ffcc00;
+    color: white;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .iconbutton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #ffd000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    cursor:pointer;
+    transition: 0.2s ease-out;
+  }
+  .iconbutton span{
+    transition: 0.2s ease-out;
+    font-size:3rem;
+    color:#ffff;
+  } 
+  .iconbutton:hover{
+    background-color: #ff9d00;
+  }
+  .iconbutton:active{
+    background-color: #ff7300;
+  }
+  /* Recommendation Form */
+  
+  input, textarea {
+    font-family:'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    margin: 10px;  
+    width:50%;
+  }
+  
+  /*Login Page*/
+  .login{
+    background-image:url('./photos/clubback.avif');
+    display:flex;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3) ;
+    margin:30px;
+    padding: 10px;
+    font-family:'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    height:400px;
+    margin-left: 500px;
+    align-items: center;
+    width:5in;
+  }
+  #in-pass{
+    font-family:inherit;
+    font-weight: 400;
+    margin-top:-10px;
+    width:200px;
+    border-radius: 5px;
+  }
+  #in-user{
+    font-family:inherit;
+    font-weight: 400;
+    margin-top:-10px;
+    width:200px;
+    border-radius: 5px;
+  }
+  #user-details{
+    text-align: center;
+    display: absolute;
+    margin-left: 1px;
+    width:90px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0,0.3);
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;   
+    background: none;
+    margin-top:50px;
+    background-color: 2px solid #000000;
+  }
+

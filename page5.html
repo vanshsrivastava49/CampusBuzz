@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CampusBuzz</title>
+    <link rel="icon" type="image/png" href="./sitelogo.svg">
+    <link rel="stylesheet" href="./srmstyle.css"/>
+  </head>
+  <body>
+    <nav>
+      <div id="home">
+        <div class="srm">
+          <img src="./sitelogo.svg">
+          <a href="./index.html">CampusBuzz</a>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="./events.html">Events</a>
+          <a class="topmenu" href="./about.html">About Me</a>
+          <a class="topmenu" href="#">Login</a>
+        </div>
+      </div>    
+    </nav>
+    <div class="search">
+          <input type="text" id="searchclub" placeholder="Search any SRM Club..." autocomplete="off" data-dropdown-button="">
+          <button type="button" id="sclubname" onclick="Sclub()">Search</button>
+        <div class="search-result" data-dropdown>
+        </div>
+    </div>
+    <div class="dropdown" data-dropdown>
+      <button class="crec" data-dropdown-button>Club Recruitment!!</button>
+      <div class="dropdown-menu">
+        <a href="https://recruitments.cherrynetwork.in/" target="_blank">Cherry+ Networks</a><br/>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYJKFWJA9QvG1GWDJIWR-1KHHY32__McN65n8a714rHr2LXg/viewform" target="_blank">Quantum Computing Club</a><br/>
+        <a href="https://nextgenai.paperform.co/" target="_blank">Next-Gen AI</a><br/>
+        <a href="http://recruitment.dbuglabs.com/" target="_blank">dBug Labs</a><br/>
+        <a href="https://www.srmteamrobocon.com/orientation_reg" target="_blank">SRM Team Robocon</a><br/>
+        <a href="#" target="_blank">GeeksForGeeks SRMIST</a><br/>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_YxnR_8OztbruamyU8PVmJR0tqfv0Nf2Wf4dQvdpKDVcYeA/viewform  " target="_blank">Rubik's Cube Club</a><br/>
+        <a href="https://l.instagram.com/?u=https%3A%2F%2Fforms.gle%2FK1GRVjZuy8fnznz57&e=AT0ulQU548KSbdc7TQruWDGk7X-aI1T9wpM-QGWfzOBbCE4Fok3yvHRkUZ7MDXGkoakIce5movvvC05_xzbQKdCptRaGWsatjPbAPQ" target="_blank">E-Cell SRMIST</a><br/>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1NVxVv6IoWJ7YERrHwWWw7TJdusAZH90z7g6yoV4c0VzWJw/viewform" target="_blank">IEEE SRMIST</a><br/>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2EtV76P3jQb-YCkFn-uwWDhmUaoJYwVStXORRu91CZyTaAg/viewform" target="_blank">TedXSRMIST</a>
+      </div>
+    </div>
+    <div class="spacing">
+    </div>
+    <section id="club">
+      <div ></div>
+      <div class="all_clubs">  <!--1-->
+        <div class="club">
+          <img src="./photos/optizen.jpg"/> <!--3-->
+          <a class="seperate" href="./clubpage/optizen.html"><h6>SRM Optizen</h6></a>
+          <p>We at OPTIZEN believe that this team will go miles in the development of scientific knowledge and will inculcate the students in carrying out research in the field of optics and photonics.
+            The Vision of OPTIZEN is to expose the students to challenges awaiting them in the field of Optics and Photonics, to create a friendly environment that encourages out of classroom learning experience, and to provide a platform for innovation through practical skills.
+            Missions of the group are to Organize workshops, seminars, competitions, and outreach activities to expose students to real-time challenges, uplift them to engage in various events and competitions, to enable students to face any hurdles in their way of learning and be dynamic along with the growing technology.</p>
+          Socials <br/>
+          <a class="weblink" href="https://www.instagram.com/optizen.srm/" target="_blank">
+            <img src="./photos/insta2.png">
+          </a>
+        </div>  
+        <div class="club">
+          <img src="./photos/scouts.jpg"/>
+          <a class="seperate" href="./clubpage/cherry.html"><h6>Team Scouts</h6></a>
+          <p>Welcome to the Team SCOUTs , where sky is not our limit, we aim for crossing the Karman line with rocket exploration propelled with passion and innovations of students like us. Scouts are Rocketry and Aeromodelling team in SRM Institute of Science and technology.</p>
+          Socials <br/>  
+            <a class="weblink" href="https://www.instagram.com/srm_rocket_team/" target="_blank">
+              <img src="./photos/insta2.png">
+            </a>
+        </div>  
+        <div class="club">
+          <img src="./photos/hexa.jpg"/> <!--3-->
+          <a class="seperate" href="./clubpage/dsa.html"><h6>HexaDynamics</h6></a>
+          <p>Hexadynamics, your go-to drone club at SRM! At Hexadynamics, drones are our passion. We specialize in building FPV drones and undertake exciting projects related to drone technology. With a strong focus on drone racing, we're proud winners of multiple races across India. Through workshops, competitions, and collaborative projects, we empower our members with the skills and knowledge needed to excel in the world of drones. Join us at Hexadynamics and discover the thrill of flight!</p>
+          Socials <br/>
+          <a class="weblink" href="https://hexadynamics.vercel.app/" target="_blank">
+            <img src="./photos/web link2.png">
+          </a> 
+          <a class="weblink" href="https://www.instagram.com/hexadynamics_srmist/" target="_blank">
+            <img src="./photos/insta2.png">
+          </a>
+        </div>  
+      </section>
+      <div class="iconbutton">
+        <a href="#home">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+      </div>
+      <div class="pagination">
+        <a href="page4.html" id="prev">Prev</a>
+        <a href="index.html" class="page-link" data-page="1">1</a>
+        <a href="page2.html" class="page-link" data-page="2">2</a>
+        <a href="page3.html" class="page-link" data-page="3">3</a>
+        <a href="page4.html" class="page-link" data-page="4">4</a>
+        <a href="page5.html" class="page-link active" data-page="4">5</a>
+        <a href="page5.html"id="next">Next</a>
+      </div>
+    <script src="./srmscript.js"></script>
+  </body>
+</html>
