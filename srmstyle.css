@@ -310,9 +310,14 @@ body {
   @keyframes fade-out {
 to{opacity:0;}    
   }
+  @media (orientation:portrait){
+    .club{
+      width:2in;
+    }
+  }
   @media (max-width:900px){
     .club{
-      width:2.3in;
+      width:2.1in;
     }
   }
   
