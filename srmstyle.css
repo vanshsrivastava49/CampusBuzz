@@ -314,10 +314,16 @@ to{opacity:0;}
     .club{
       width:2in;
     }
+    .club h6{
+      font-weight: bolder;
+    }
   }
   @media (max-width:900px){
     .club{
       width:2.1in;
+    }
+    .club h6{
+      font-weight: bolder;
     }
   }
   
@@ -332,7 +338,7 @@ to{opacity:0;}
     font-size: 25px;
     letter-spacing:0.3mm;
     margin-block-start: 8px;
-    font-weight: bolder;
+    font-weight: lighter;
     margin-block-end: 5px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-bottom:20px;
