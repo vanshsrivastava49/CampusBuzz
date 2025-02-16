@@ -71,8 +71,8 @@ body {
     color:#ffd000;
   }
   #sclubname:hover{
-    background-color: #000000;
-    color: rgb(240, 231, 231);
+    background-color: #464141;
+    color: rgb(220, 218, 218);
   }
   input{
     flex:1;
