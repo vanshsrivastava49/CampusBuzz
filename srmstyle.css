@@ -307,32 +307,6 @@ body {
     animation-timeline: view(); 
     animation-range:exit 200px;
   }
-  @keyframes fade-out {
-to{opacity:0;}    
-  }
-  @media (orientation:portrait){
-    .club{
-      width:3in;
-    }
-    .club h6{
-      font-weight: 1000;
-    }
-  }
-  @media (max-width:900px){
-    .club{
-      width:2.1in;
-    }
-    .club h6{
-      font-weight: bolder;
-    }
-  }
-  
-  .club img {
-    height: 35px;
-    align-items:center;
-    margin-bottom:-5px;
-  }
-  
   .club h6 {
     align-items: center;
     font-size: 25px;
@@ -343,6 +317,33 @@ to{opacity:0;}
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom:20px;
   } 
+  @keyframes fade-out {
+to{opacity:0;}    
+  }
+  @media (orientation:portrait){
+    .club{
+      width:3in;
+    }
+    .club h6{
+      font-weight: 2000;
+    }
+  }
+  @media (max-width:900px){
+    .club{
+      width:2.1in;
+    }
+    .club h6{
+      font-weight: 2000;
+    }
+  }
+  
+  .club img {
+    height: 35px;
+    align-items:center;
+    margin-bottom:-5px;
+  }
+  
+  
   .club p {
     align-items: center;
     font-size: 15px;
