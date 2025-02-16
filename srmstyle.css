@@ -314,7 +314,7 @@ body {
     margin-block-start: 8px;
     font-weight: lighter;
     margin-block-end: 5px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:fantasy;
     margin-bottom:20px;
   } 
   @keyframes fade-out {
@@ -342,8 +342,10 @@ to{opacity:0;}
     align-items:center;
     margin-bottom:-5px;
   }
-  
-  
+  .weblink{
+    text-decoration: none;
+    border: none;
+  }
   .club p {
     align-items: center;
     font-size: 15px;
