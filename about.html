@@ -13,19 +13,37 @@
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid #000000;
-      animation: typing 2s steps(20, end), blink 0.75s step-end infinite;
+      animation: typing 2s steps(30, end), blink 0.75s step-end infinite;
+    }
+    .typing-name {
+      display: inline-block;
+      color: #000000;
+      font-weight: bold;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #000000;
+      animation: typing-name 2s steps(30, end), blink 0.75s step-end infinite;
     }
 @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 13%;
+    width: 8%;
   }
 }
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+@keyframes  typing-name{
+  from {
+    width: 0;
+  }
+  to {
+    width: 18%;
   }
 }
 #about-me h2{
@@ -59,7 +77,15 @@
             width: 0;
           }
           to {
-            width: 25%;
+            width: 18%;
+          }
+        }
+        @keyframes  typing-name{
+          from {
+            width: 0;
+          }
+          to {
+            width: 35%;
           }
         }
         @keyframes blink {
@@ -117,8 +143,8 @@
     <br/>
     <section id="about-me" class="container">
       <br>
-          <h2 class="typing">Hi! We are</h2><br/><h1 class="typing">Nausekhiye</h1>
-  <p>We are a dynamic trio of passionate computer science professionals—Vansh, Tejas, and Ashmita—leveraging our combined expertise in web development and artificial intelligence to craft impactful, innovative solutions.</p>
+          <h2 class="typing">Hi! I'm</h2><br/><h1 class="typing-name">Vansh Srivastava</h1>
+  <p>A curious and driven guy with a passion for building things from the ground up. Currently pursuing my degree in Computer Science Engineering at SRM KTR. CampusBuzz is a project which led to me implement my basics in HTML, CSS and Js from scartch.</p>
   <p>CampusBuzz is a platform that provides information and awareness about college clubs, teams, communities and societies including registrations for
     events and recruitments.</p>
   <p></p><br/>
